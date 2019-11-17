@@ -1,5 +1,5 @@
 # Frontend Mentor - Shortly URL shortening API Challenge
-
+Live Preview Link: https://chamumutezva.github.io/url-shortening-api-master/
 ![Design preview for the Shortly URL shortening API coding challenge](./design/desktop-preview.jpg)
 
 ## Welcome! 👋
