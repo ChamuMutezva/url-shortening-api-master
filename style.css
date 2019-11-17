@@ -61,8 +61,23 @@ input.getStart {
     color: white;
     display: block;
 }
+/* ***************Main Section ****************** */
+input[type="url"], input[type="submit"] {
+    width: 90%;
+    display: block;
+    margin: 3% auto;
+    height: 6vh;
+}
 
-
+form.shortUrl {
+    width: 90%;
+    background-image: url("images/bg-boost-mobile.svg");
+    display: block;
+    margin: auto;
+    height: 20vh;
+    /* line-height: 12vh; */
+    padding: 1% 0 0 0;
+}
 
 }
 
@@ -91,10 +106,33 @@ input.getStart {
         visibility: hidden;
     }
     .shorterLinks {
-        width: 40%;
+        width: 50%;
     }
     img.illustrate {
-        width: 40%; 
+        width: 50%; 
+    }
+
+    section.hero {
+        margin-top: 5%;
+    }
+
+    .shorterLinks h1 {
+        font-size: xxx-large;
+        width: 55%;        
+        margin: 15% auto 0;
+        text-align: start;
+    }
+
+    .shorterLinks p {
+        width: 55%;
+        margin: auto;
+        text-align: start;
+    }
+
+    input.getStart {
+        margin: 5% 22%;
+        width: 31%;
+        font-size: large;      
     }
 
      }
