@@ -15,25 +15,47 @@ nav {
     justify-content: space-between;
     margin-top: 5%;
 }
+
+nav img {
+    margin-left: 5%;
+}
+
 ul {
+    display: flex;
     text-align: center;
+    flex-direction: column;
+    height: 50%;
+    justify-content: space-around;
+    
 }
 li {
     list-style: none;
+    color: white;
+}
+ul.logSign {
+    border-top: 1px solid white;
+    
 }
 section.modal {
     text-align: center;
-    position: absolute;    
+    position: absolute; 
+    height: 60vh;
+    left: 15%;
+    top: 17%;
+    background-color: hsl(257, 27%, 26%);
+    width: 80%;  
+    border-radius: 20px;
     visibility: hidden; 
 }
 
 img.illustrate {
     width: 80%;
-    margin: auto;
+    margin: 10% auto;
 }
 
 .fa.fa-bars {
     visibility: visible;
+    margin-right: 5%;
 }
 
 section.hero {
@@ -43,6 +65,8 @@ section.hero {
 }
 
 .shorterLinks h1 {
+    padding: 5% 10%;
+    display: block;
     font-weight: 900;
     text-align: center;
     font-size: xx-large;
@@ -86,20 +110,24 @@ form.shortUrl {
         margin-left: 5%;
     }
     section.modal {
+        background: none;
         width: 80%;
         visibility: visible;
         display: flex;
         justify-content: space-around;
     top: 7%;
     right: 0;
+    height: 10vh;
+    left: 20%;
     }
 
     ul {
-        display: flex;
+        flex-direction: row;
     }
 
     li {
         width: 10vw; 
+        color: black;
     }
 
     .fa.fa-bars {
