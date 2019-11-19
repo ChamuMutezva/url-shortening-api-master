@@ -11,7 +11,9 @@ window.onresize = function() {
     if (window.innerWidth >= 680) {
         modal.style.visibility = 'visible';
        // console.log(window.innerWidth);
-    } 
+    } else {
+        modal.style.visibility = 'hidden';
+    }
 }
 
 menuCtl.addEventListener("click", function () {

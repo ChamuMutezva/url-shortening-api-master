@@ -53,6 +53,11 @@ section.modal {
     text-align: center;
     position: absolute;    
     visibility: hidden; 
+    background-color: hsl(255, 11%, 22%);
+    border-radius: 25px;
+    left: 12%;
+    height: 40vh;
+    width: 80%;
 }
 
 img.illustrate {
