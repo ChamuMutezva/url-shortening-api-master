@@ -42,12 +42,21 @@ body {
 
 }
 
-.footer .footer-bottom > * {padding: 10px; display: grid;
+.footer .footer-bottom > * {
+    /*padding: 10px; */
+    display: grid;
             grid-template-columns: 1fr;
             justify-content: center;
             align-items: center;
             color: white;
             gap: 10px;
+}
+footer svg {
+    margin: auto;
+}
+
+footer svg path{
+    fill: white;
 }
 .footer .footer-bottom a {color: whitesmoke; text-decoration: none;}
 .footer .footer-bottom .one {align-items: flex-start;}
@@ -171,10 +180,26 @@ form.shortUrl {
 
 .brands {
     background-color: white;
-    margin: 5% auto;
-    width: 90%;
+    margin: 5% auto 15%;
+    width: 80%;
+    height: 40vh;
     display: block;
     text-align: center;
+}
+
+section.brandsSection {
+    background-color: lightgray;
+}
+
+.brandsImg {
+    position: relative;
+    top: -15%;
+    width: 15%;
+    height: 25%;
+    line-height: 12vh;
+    margin: auto;
+    background-color: hsl(260, 8%, 14%);
+    border-radius: 50%;
 }
 
 }
@@ -198,6 +223,7 @@ form.shortUrl {
 
     ul {
         display: flex;
+        flex-direction: row;
     }
 
     li {
