@@ -4,7 +4,8 @@
     box-sizing: border-box;
 }
 body {    
-    font-family: 'Poppins', sans-serif;    
+    font-family: 'Poppins', sans-serif;  
+    overflow-x: hidden;
 }
 
 .footer {
@@ -70,7 +71,7 @@ footer svg path{
 
 
 
-@media only screen and (min-width: 300px) {
+/* @media only screen and (min-width: 300px) {  unnecessary media query removed*/
 nav {
     display: flex;
     justify-content: space-between;
@@ -95,6 +96,10 @@ ul {
 }
 li {
     list-style: none;
+}
+/* svg*/
+nav svg {
+    margin-left: 6%;
 }
 section.modal {
     text-align: center;
@@ -194,15 +199,15 @@ section.brandsSection {
 .brandsImg {
     position: relative;
     top: -15%;
-    width: 15%;
-    height: 25%;
-    line-height: 12vh;
+    width: 25%;
+    height: 30%;
+    line-height: 16vh;
     margin: auto;
     background-color: hsl(260, 8%, 14%);
     border-radius: 50%;
 }
 
-}
+/* } this media query is removed */
 
  @media only screen and (min-width: 680px) {
     nav img {
@@ -240,12 +245,30 @@ section.brandsSection {
         width: 50%; 
     }
 
-    section.hero {
-       /* margin-top: 5%;*/
+    nav svg {        
+        margin-top: 2%;
+    }
+    .detailedRecords {
+        align-self: center;
+    }
+    .customize.brands {
+        align-self: flex-end;
+    }
+    .brandsImg {       
+      
+        width: 25%;
+        height: 30%;
+        line-height: 16vh;
+        
+    }
+    .brands {
+        width: 32%;
+        height: 40vh;
     }
 
+
     .shorterLinks h1 {
-        font-size: xxx-large;
+        font-size: xx-large;
         width: 55%;        
         margin: 5% auto 0;
         text-align: start;
@@ -262,7 +285,18 @@ section.brandsSection {
         width: 31%;
         font-size: large;      
     }
+    .details {
+        display: flex;
+        height: 80vh;
+    }
 
+
+     }
+
+     @media only screen and (min-width: 980px) {
+        nav svg {
+            margin-top: 0;
+        }
      }
 
      @media (max-width:600px) {
