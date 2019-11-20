@@ -166,10 +166,12 @@ input[type="submit"] {
 
 form.shortUrl {
     width: 90%;
-    background-image: url("images/bg-boost-mobile.svg");
-    display: block;
+    background-image: url(images/bg-shorten-mobile.svg);
+    background-size: 100% 420%;
+    background-repeat: no-repeat;
+    /* display: block; */
     margin: auto;
-    height: 20vh;
+    height: 23vh;
     /* line-height: 12vh; */
     padding: 1% 0 0 0;
 }
@@ -213,6 +215,20 @@ section.brandsSection {
     nav img {
         margin-left: 5%;
     }
+
+    input[type="url"], input[type="submit"] {       
+        display: inline-block;
+        margin: 3% auto;
+        height: 6vh;
+    }
+    input[type="url"] {
+        width: 60%;  
+    }
+     input[type="submit"] {
+        width: 30%;       
+    }
+
+
     section.modal {
         width: 80%;
         visibility: visible;
@@ -288,6 +304,11 @@ section.brandsSection {
     .details {
         display: flex;
         height: 80vh;
+    }
+
+    form.shortUrl {
+        text-align: center;
+        
     }
 
 
