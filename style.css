@@ -124,30 +124,34 @@ section.modal {
     border-radius: 25px;
 }
 img.illustrate {
-    width: 80%;
+    width: 100%;
     margin: auto;
 }
 
 .fa.fa-bars {
     visibility: visible;
-    margin-right: 5%;    
+    margin-right: 5%; 
+    font-size: large;   
 }
 
 section.hero {
     display: flex;
     flex-direction: row-reverse;
     flex-wrap: wrap;
-    margin-top: 14%;
+    margin: 14% auto 30%;
 }
 
 .shorterLinks h1 {
     font-weight: 900;
     text-align: center;
     font-size: xx-large;
+    width: 90%;
+    margin-top: 5%;
 }
 
 p {
     text-align: center;
+    opacity: 0.5;
 }
 
 input.getStart {
@@ -174,15 +178,17 @@ input[type="submit"] {
 }
 
 form.shortUrl {
+    position: absolute;    
+    top: -8%;
+    left: 5%;
     width: 90%;
     background-image: url(images/bg-shorten-mobile.svg);
     background-size: 100% 420%;
-    background-repeat: no-repeat;
-    /* display: block; */
+    background-repeat: no-repeat;    
     margin: auto;
-    height: 23vh;
-    /* line-height: 12vh; */
+    height: 23vh;   
     padding: 1% 0 0 0;
+    border-radius: 25px;
 }
 
 .heroSecondary {
@@ -190,14 +196,14 @@ form.shortUrl {
 }
 
 .stats {
-    padding: 5% 10%;
+    padding: 20% 10% 10%;
     text-align: center;
 }
 
 .brands {
     background-color: white;
     margin: 5% auto 15%;
-    width: 80%;
+    width: 90%;
     height: 40vh;
     display: block;
     text-align: center;
@@ -205,8 +211,15 @@ form.shortUrl {
 
 section.brandsSection {
     background-color: lightgray;
+    position: relative;
 }
 
+section.brandsSection p {
+    font-size: small;
+    width: 90%;
+    margin: auto;
+    text-align: center;
+}
 .brandsImg {
     position: relative;
     top: -15%;
@@ -230,7 +243,9 @@ section.brandsSection {
         line-height: 6vh;       
         margin: -10px 5%;        
     }
-
+    section.hero {        
+        margin: 5% auto 8%;
+    }
     input[type="url"], input[type="submit"] {       
         display: inline-block;
         margin: 3% auto;
@@ -280,21 +295,23 @@ section.brandsSection {
     nav svg {        
         margin-top: 2%;
     }
+    .brand {
+        align-self: flex-start;
+    }
     .detailedRecords {
         align-self: center;
     }
     .customize.brands {
         align-self: flex-end;
     }
-    .brandsImg {       
-      
-        width: 25%;
-        height: 30%;
-        line-height: 16vh;
-        
+    .brandsImg {
+        width: 20%;
+        height: 24%;
+        line-height: 14vh;
+        right: 40%;
     }
     .brands {
-        width: 32%;
+        width: 30%;
         height: 40vh;
     }
 
@@ -324,9 +341,16 @@ section.brandsSection {
 
     form.shortUrl {
         text-align: center;
-        
+        top: -6%;
     }
 
+    .stats {
+        padding: 12% 10% 4%;       
+    }
+    section.brandsSection p {
+        font-size: large;
+        width: 50%;        
+    }
 
      }
 
