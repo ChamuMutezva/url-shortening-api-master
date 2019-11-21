@@ -69,8 +69,6 @@ footer svg path{
 }
 .footer-bottom img:hover {cursor: pointer; transform:translateY(3px);}
 
-
-
 /* @media only screen and (min-width: 300px) {  unnecessary media query removed*/
 nav {
     display: flex;
@@ -113,7 +111,10 @@ section.modal {
     width: 80%;
     color: white;
 }
-
+.modal a {
+    color: white;
+    text-decoration: none;
+}
 img.illustrate {
     width: 80%;
     margin: auto;
@@ -227,8 +228,6 @@ section.brandsSection {
      input[type="submit"] {
         width: 30%;       
     }
-
-
     section.modal {
         width: 80%;
         visibility: visible;
@@ -240,6 +239,9 @@ section.brandsSection {
     background-color: white;
     left: 25%;
     color: black;
+    }
+    .modal a {
+        color: black;       
     }
 
     ul {
