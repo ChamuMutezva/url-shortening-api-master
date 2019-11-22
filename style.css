@@ -340,6 +340,7 @@ section.brandsSection p {
     }
 
     form.shortUrl {
+        height: 15vh;
         text-align: center;
         top: -6%;
     }
@@ -348,8 +349,8 @@ section.brandsSection p {
         padding: 12% 10% 4%;       
     }
     section.brandsSection p {
-        font-size: large;
-        width: 50%;        
+        font-size: medium;
+        width: 80%;        
     }
 
      }
