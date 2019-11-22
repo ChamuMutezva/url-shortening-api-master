@@ -16,7 +16,7 @@ body {
     background-color: rgb(70, 24, 112);
     color: white;
     padding: 20px;
-    margin-top: 20px;
+  /*  margin-top: 20px; */
 }
 .footer .section-footer {
     text-align: center;
@@ -80,12 +80,14 @@ nav img {
 }
 ul.products {
     height: 60%;
-    border-bottom: 1px solid white;
 }
 ul.logSign {
     height: 40%;
 }
-
+hr {
+    width: 80%;
+    margin: 2% auto 5%;
+}
 ul {
     text-align: center;
     display: flex;
@@ -107,7 +109,7 @@ section.modal {
     background-color: hsl(257, 27%, 26%);
     border-radius: 25px;
     left: 12%;
-    height: 50vh;
+    height: 55vh;
     width: 80%;
     color: white;
 }
@@ -243,6 +245,9 @@ section.brandsSection p {
         line-height: 6vh;       
         margin: -10px 5%;        
     }
+    hr {
+                display: none;
+    }
     section.hero {        
         margin: 5% auto 8%;
     }
@@ -312,7 +317,8 @@ section.brandsSection p {
     }
     .brands {
         width: 30%;
-        height: 40vh;
+        height: 35vh;
+        margin: 5% auto 8%;
     }
 
 
@@ -335,8 +341,10 @@ section.brandsSection p {
         font-size: large;      
     }
     .details {
-        display: flex;
-        height: 80vh;
+        width: 90%;
+    display: flex;
+    height: 70vh;
+    margin: auto;
     }
 
     form.shortUrl {
