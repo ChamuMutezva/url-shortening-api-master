@@ -1,7 +1,11 @@
 const menuCtl = document.querySelector('.fa-bars');
 const modal = document.querySelector('.modal');
+const btn = document.querySelector(".btn");
+const container = document.querySelector(".urlContainer");
 console.log(menuCtl);
 console.log(modal);
+console.log(btn);
+console.log(container);
 let count = 1;
 
 //reset modal to be visible at all times
@@ -26,3 +30,16 @@ menuCtl.addEventListener("click", function () {
     console.log("item clicked" + count);
     count++;
 })
+
+function addDetails() {
+  console.log(container);
+  let urlDiv = document.createElement("div");
+  urlDiv.style.width = "80%";
+    urlDiv.style.height = "20vh";
+    urlDiv.style.backgroundColor = "red";
+    container.appendChild(urlDiv);
+    urlDiv.style.margin = "auto";
+    urlDiv.style.marginBottom = "10px"
+}
+
+btn.addEventListener("click", addDetails);

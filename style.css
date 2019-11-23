@@ -166,13 +166,13 @@ input.getStart {
     display: block;
 }
 /* ***************Main Section ****************** */
-input[type="url"], input[type="submit"] {
+input[type="url"], input[type="button"] {
     width: 90%;
     display: block;
     margin: 3% auto;
     height: 6vh;
 }
-input[type="submit"] {
+input[type="button"] {
     background-color: hsl(180, 66%, 49%);
     font-size: large;
     font-weight: 700;
@@ -198,7 +198,7 @@ form.shortUrl {
 }
 
 .stats {
-    padding: 20% 10% 10%;
+    margin-bottom: 15%;
     text-align: center;
 }
 
@@ -232,8 +232,15 @@ section.brandsSection p {
     background-color: hsl(260, 8%, 14%);
     border-radius: 50%;
 }
+h3 {
+    margin-bottom: 3%;
+}
 
-/* } this media query is removed */
+.urlContainer {
+    padding: 20% 10% 10%;
+}
+
+/* ############################%%%%%%%%%%%%%%%%%%%%%%%%&&&&&&&&&&&&&&&&&&& */
 
  @media only screen and (min-width: 680px) {
     nav img {
@@ -251,7 +258,7 @@ section.brandsSection p {
     section.hero {        
         margin: 5% auto 8%;
     }
-    input[type="url"], input[type="submit"] {       
+    input[type="url"], input[type="button"] {       
         display: inline-block;
         margin: 3% auto;
         height: 6vh;
@@ -259,7 +266,7 @@ section.brandsSection p {
     input[type="url"] {
         width: 60%;  
     }
-     input[type="submit"] {
+     input[type="button"] {
         width: 30%;       
     }
     section.modal {
@@ -317,10 +324,12 @@ section.brandsSection p {
     }
     .brands {
         width: 30%;
-        height: 35vh;
+        height: 40vh;
         margin: 5% auto 8%;
     }
-
+    .stats {       
+        margin-bottom: 0;
+    }
 
     .shorterLinks h1 {
         font-size: xx-large;
@@ -353,7 +362,7 @@ section.brandsSection p {
         top: -6%;
     }
 
-    .stats {
+    .urlContainer {
         padding: 12% 10% 4%;       
     }
     section.brandsSection p {

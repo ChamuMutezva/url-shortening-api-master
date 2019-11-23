@@ -22,7 +22,7 @@ Your users should be able to:
 - Shorten any valid URL
 - See a list of their shortened links, even after refreshing the browser
 - Copy the shortened link to their clipboard in a single click
-- Receive an error message when the `form` is submitted if:
+- Receive an error message when the `form` is buttonted if:
   - The `input` field is empty
 
 Want some support on the challenge? [Join our Slack community](https://www.frontendmentor.io/slack) and ask questions in the **#help** channel.
