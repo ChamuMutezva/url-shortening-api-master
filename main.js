@@ -14,13 +14,13 @@ let count = 1;
 window.onresize = function() {
     if (window.innerWidth >= 680) {
         modal.style.visibility = 'visible';
-       // console.log(window.innerWidth);
+        // console.log(window.innerWidth);
     } else {
         modal.style.visibility = 'hidden';
     }
 }
 
-menuCtl.addEventListener("click", function () {
+menuCtl.addEventListener("click", function() {
     console.log(window.innerWidth);
     if (modal.style.visibility == "hidden") {
         modal.style.visibility = 'visible';
@@ -32,14 +32,53 @@ menuCtl.addEventListener("click", function () {
 })
 
 function addDetails() {
-  console.log(container);
-  let urlDiv = document.createElement("div");
-  urlDiv.style.width = "80%";
-    urlDiv.style.height = "20vh";
-    urlDiv.style.backgroundColor = "red";
-    container.appendChild(urlDiv);
-    urlDiv.style.margin = "auto";
-    urlDiv.style.marginBottom = "10px"
+    console.log(container);
+    const inputField = document.getElementById("userInp");
+
+    container.innerHTML = '<div class="load-wrapper"><div class="lds-ellipsis"><div></div><div></div><div></div><div></div></div></div>';
+    fetch("https://rel.ink/api/links/", {
+            method: 'POST',
+            body: JSON.stringify({ url: inputField.value }),
+            headers: {
+                'Content-Type': 'application/json',
+            }
+        }).then(response => {
+            container.innerHTML = '';
+            if (response.status == 400) {
+                alert("Please make sure you provided a valid url");
+                return;
+            } else {
+                return response.json();
+            }
+        })
+        .then(data => {
+            if (data === undefined) {
+                return;
+            }
+            let urlDiv = document.createElement("div");
+            const urlBox = document.createElement("input");
+            const copyBtn = document.createElement("button");
+            urlBox.classList.add("url-box");
+            copyBtn.classList.add("copy-btn");
+            copyBtn.textContent = "Copy";
+            copyBtn.addEventListener("click", (e) => {
+                alert("Handle your copy link logic here");
+            })
+            urlBox.value = "https://rel.ink/" + data.hashid;
+            urlDiv.style.width = "80%";
+            urlDiv.style.height = "20vh";
+            //urlDiv.style.backgroundColor = "red";
+            urlDiv.appendChild(urlBox);
+            urlDiv.appendChild(copyBtn);
+            container.appendChild(urlDiv);
+            urlDiv.style.margin = "auto";
+            urlDiv.style.marginBottom = "10px"
+        }).catch(
+            error => {
+                // handle your errors here
+                console.log(error);
+            }
+        )
 }
 
 btn.addEventListener("click", addDetails);
