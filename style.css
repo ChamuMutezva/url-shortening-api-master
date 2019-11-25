@@ -8,6 +8,30 @@ body {
     font-family: 'Poppins', sans-serif;
     overflow-x: hidden;
 }
+.urlDiv {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+input#userInp {
+    font-size: 8pt;
+}
+.url-box, .url-short {
+    padding-left: 5%;
+    font-size: 9pt;
+    width: 100%;
+    height: 5vh;
+    border: none;
+}
+
+.copy-btn {   
+    font-size: 15pt;
+    width: 100%;
+    height: 26%;
+    background: #4f5f6f;
+    color: #fff;
+    border: none;
+}
 
 .footer {
     background-image: url('images/bg-boost-desktop.svg');
@@ -286,13 +310,29 @@ h3 {
 }
 
 .urlContainer {
-    padding: 20% 10% 10%;
+    padding: 20% 1% 10%;
 }
 
 
 /* ############################%%%%%%%%%%%%%%%%%%%%%%%%&&&&&&&&&&&&&&&&&&& */
 
 @media only screen and (min-width: 680px) {
+    .copy-btn {       
+        width: 14%;
+        height: 5vh;           
+    }
+    .urlDiv {        
+        flex-wrap: nowrap;
+    }
+
+    .url-box, .url-short {
+        padding-left: 5%;
+        font-size: 15pt;
+        width: 100%;   
+        height: 5vh;
+        border: none;   
+    }    
+    
     nav img {
         margin-left: 5%;
     }
@@ -405,10 +445,10 @@ h3 {
         top: -6%;
     }
     .urlContainer {
-        padding: 12% 10% 4%;
+        padding: 12% 0% 4%;
     }
     section.brandsSection p {
-        font-size: medium;
+        font-size: small;
         width: 80%;
     }
 }
@@ -417,6 +457,9 @@ h3 {
     nav svg {
         margin-top: 0;
     }
+    section.brandsSection p {
+        font-size: medium;
+           }
 }
 
 @media (max-width:600px) {
@@ -435,28 +478,9 @@ h3 {
     }
 }
 
-.url-box {
-    font-size: 15pt;
-    width: 85%;
-    height: 30px;
-    border: none;
-    border-top-left-radius: 1em;
-    border-bottom-left-radius: 1em;
-}
 
 .url-box:focus {
     outline: none;
-}
-
-.copy-btn {
-    font-size: 15pt;
-    width: 15%;
-    height: 30px;
-    background: #4f5f6f;
-    color: #fff;
-    border: none;
-    border-top-right-radius: 1em;
-    border-bottom-right-radius: 1em;
 }
 
 .copy-btn:focus {

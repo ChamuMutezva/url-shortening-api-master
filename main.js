@@ -35,7 +35,7 @@ function addDetails() {
     console.log(container);
     const inputField = document.getElementById("userInp");
 
-    container.innerHTML = '<div class="load-wrapper"><div class="lds-ellipsis"><div></div><div></div><div></div><div></div></div></div>';
+   //container.innerHTML = '<div class="load-wrapper"><div class="lds-ellipsis"><div></div><div></div><div></div><div></div></div></div>';
     fetch("https://rel.ink/api/links/", {
             method: 'POST',
             body: JSON.stringify({ url: inputField.value }),
@@ -43,7 +43,7 @@ function addDetails() {
                 'Content-Type': 'application/json',
             }
         }).then(response => {
-            container.innerHTML = '';
+          //  container.innerHTML = '';
             if (response.status == 400) {
                 alert("Please make sure you provided a valid url");
                 return;
@@ -57,18 +57,24 @@ function addDetails() {
             }
             let urlDiv = document.createElement("div");
             const urlBox = document.createElement("input");
+            const urlShort = document.createElement("input");
             const copyBtn = document.createElement("button");
+            urlBox.style.rows = "2";
+            urlDiv.classList.add("urlDiv");
             urlBox.classList.add("url-box");
+            urlShort.classList.add("url-short");
             copyBtn.classList.add("copy-btn");
             copyBtn.textContent = "Copy";
             copyBtn.addEventListener("click", (e) => {
                 alert("Handle your copy link logic here");
             })
-            urlBox.value = "https://rel.ink/" + data.hashid;
-            urlDiv.style.width = "80%";
-            urlDiv.style.height = "20vh";
-            //urlDiv.style.backgroundColor = "red";
+            console.log(data);
+            urlBox.value = `${inputField.value}`;
+             urlShort.value = `https://rel.ink/${data.hashid}`;
+            urlDiv.style.width = "90vw";
+           // urlDiv.style.height = "20vh";           
             urlDiv.appendChild(urlBox);
+            urlDiv.appendChild(urlShort);
             urlDiv.appendChild(copyBtn);
             container.appendChild(urlDiv);
             urlDiv.style.margin = "auto";
