@@ -28,6 +28,7 @@ label {
     font-size: 11px;
     color:  hsl(0, 87%, 67%);
     margin-left: 5%;
+    margin-bottom: 2%;
     display: none;
 }
 .url-box, .url-short {
@@ -195,7 +196,7 @@ section.modal {
     position: absolute;
     top: 12%;
     visibility: hidden;
-    background-color: hsl(257, 27%, 26%);
+    background-color: hsl(258, 35%, 47%);
     border-radius: 25px;
     left: 12%;
     height: 55vh;
@@ -345,14 +346,16 @@ h3 {
 
 @media only screen and (min-width: 680px) {
     .copy-btn {       
-        width: 14%;
-        height: 5vh;           
+        width: 20%;
+        height: 5vh;  
+        margin: 2% 2% 0 0;        
     }
     .urlDiv {        
         flex-wrap: nowrap;
+        padding-bottom: 2%;
     }
     input#userInp {       
-        font-size: 15pt;
+        font-size: 15pt;       
     }
     label {       
         font-size: 15px;       
@@ -434,6 +437,7 @@ h3 {
     }
     .customize.brands {
         align-self: flex-end;
+        margin-bottom: 5%;
     }
     .brandsImg {
         width: 20%;

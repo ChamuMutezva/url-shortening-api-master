@@ -70,7 +70,9 @@ function addDetails() {
             copyBtn.textContent = "Copy";
             copyBtn.addEventListener("click", (e) => {
                 console.log(e.target);
-                alert("Handle your copy link logic here");
+                //alert("Handle your copy link logic here");
+                e.target.style.backgroundColor = "hsl(258, 35%, 47%)";
+                e.target.innerHTML = "Copied!"
             })
             console.log(data);
             urlBox.value = `${inputField.value}`;
