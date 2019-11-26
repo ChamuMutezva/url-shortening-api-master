@@ -66,6 +66,7 @@ function addDetails() {
             copyBtn.classList.add("copy-btn");
             copyBtn.textContent = "Copy";
             copyBtn.addEventListener("click", (e) => {
+                console.log(e.target);
                 alert("Handle your copy link logic here");
             })
             console.log(data);

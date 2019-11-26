@@ -222,14 +222,11 @@ p {
     opacity: 0.5;
 }
 
-input.getStart {
+input[type="button"].getStart {
     margin: 5% auto;
     width: 50%;
     height: 8vh;
-    border-radius: 20px;
-    background-color: hsl(180, 66%, 49%);
-    color: white;
-    display: block;
+    border-radius: 20px;    
 }
 
 
