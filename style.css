@@ -55,8 +55,7 @@ label {
     border: none;
 }
 
-.footer {
-   
+.footer {   
     color: white;
     padding: 0 0 10%;
     background-color: hsl(260, 8%, 14%);
@@ -279,13 +278,19 @@ form.shortUrl {
     top: -8%;
     left: 5%;
     width: 90%;
-    background-image: url(images/bg-shorten-mobile.svg);
+   /* background-image: url(images/bg-shorten-mobile.svg);
     background-size: 100% 420%;
-    background-repeat: no-repeat;
+    background-repeat: no-repeat; */
     margin: auto;
     height: 23vh;
     padding: 1% 0 0 0;
     border-radius: 25px;
+
+    background-image: url('images/bg-boost-mobile.svg');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    background-color: rgb(70, 24, 112);
 }
 
 .heroSecondary {
@@ -476,6 +481,7 @@ h3 {
         margin: auto;
     }
     form.shortUrl {
+        background-image: url('images/bg-boost-desktop.svg');
         height: 15vh;
         text-align: center;
         top: -6%;
