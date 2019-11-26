@@ -2,7 +2,8 @@ const menuCtl = document.querySelector('.fa-bars');
 const modal = document.querySelector('.modal');
 const btn = document.querySelector(".btn");
 const container = document.querySelector(".urlContainer");
-console.log(menuCtl);
+const lbl = document.querySelector("label");
+console.log(lbl);
 console.log(modal);
 console.log(btn);
 console.log(container);
@@ -32,6 +33,7 @@ menuCtl.addEventListener("click", function() {
 })
 
 function addDetails() {
+    lbl.style.display = "none";
     console.log(container);
     const inputField = document.getElementById("userInp");
 
@@ -45,7 +47,8 @@ function addDetails() {
         }).then(response => {
           //  container.innerHTML = '';
             if (response.status == 400) {
-                alert("Please make sure you provided a valid url");
+                //alert("Please make sure you provided a valid url");
+                lbl.style.display = "block";
                 return;
             } else {
                 return response.json();

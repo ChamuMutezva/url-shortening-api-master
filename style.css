@@ -12,44 +12,68 @@ body {
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
+    background: white;
+    padding-bottom: 5%;
 }
 input#userInp {
     font-size: 8pt;
+    padding-left: 5%;
+}
+input#userInp:invalid{
+    border: 3px solid hsl(0, 87%, 67%);
+    box-shadow: 1px 1px 0px 3px rgb(141, 98, 107);
+}
+label {
+    position: absolute;
+    font-size: 11px;
+    color:  hsl(0, 87%, 67%);
+    margin-left: 5%;
+    display: none;
 }
 .url-box, .url-short {
     padding-left: 5%;
-    font-size: 9pt;
+    font-size: 10pt;
     width: 100%;
     height: 5vh;
     border: none;
 }
 
+.url-short {
+    color: hsl(180, 66%, 49%);
+    border-top: 1px solid black;
+}
+
 .copy-btn {   
     font-size: 15pt;
-    width: 100%;
-    height: 26%;
-    background: #4f5f6f;
+    width: 90%;
+    margin: auto;
+    height: 7vh;
+    background: hsl(180, 66%, 49%);
+    border-radius: 10px;
     color: #fff;
     border: none;
 }
 
 .footer {
+   
+    color: white;
+    padding: 0 0 10%;
+    background-color: hsl(260, 8%, 14%);
+    /*  margin-top: 20px; */
+}
+
+.footer .section-footer {
     background-image: url('images/bg-boost-desktop.svg');
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
     background-color: rgb(70, 24, 112);
-    color: white;
-    padding: 20px;
-    /*  margin-top: 20px; */
+    text-align: center;    
+    height: 40vh;
 }
-
-.footer .section-footer {
-    text-align: center;
-    width: 50%;
-    margin: 20px auto;
+footer h2 {
+    padding-top: 10%;
 }
-
 .section-footer>button {
     margin: 20px;
     background: none;
@@ -86,7 +110,7 @@ input#userInp {
 }
 
 footer svg {
-    margin: auto;
+    margin: 8% auto;
 }
 
 footer svg path {
@@ -96,6 +120,7 @@ footer svg path {
 .footer .footer-bottom a {
     color: whitesmoke;
     text-decoration: none;
+    font-size: small;
 }
 
 .footer .footer-bottom .one {
@@ -103,6 +128,7 @@ footer svg path {
 }
 
 .footer-bottom .five {
+    margin-top: 5%;
     grid-template-columns: repeat(4, 1fr);
     align-content: flex-start;
 }
@@ -236,7 +262,7 @@ input[type="url"],
 input[type="button"] {
     width: 90%;
     display: block;
-    margin: 3% auto;
+    margin: 3% auto 0;
     height: 6vh;
 }
 
@@ -279,6 +305,10 @@ form.shortUrl {
     text-align: center;
 }
 
+.customize.brands {   
+    margin-bottom: 0;
+}
+
 section.brandsSection {
     background-color: lightgray;
     position: relative;
@@ -295,8 +325,8 @@ section.brandsSection p {
     position: relative;
     top: -15%;
     width: 25%;
-    height: 30%;
-    line-height: 16vh;
+    height: 35%;
+    line-height: 20vh;
     margin: auto;
     background-color: hsl(260, 8%, 14%);
     border-radius: 50%;
@@ -321,7 +351,12 @@ h3 {
     .urlDiv {        
         flex-wrap: nowrap;
     }
-
+    input#userInp {       
+        font-size: 15pt;
+    }
+    label {       
+        font-size: 15px;       
+    }
     .url-box, .url-short {
         padding-left: 5%;
         font-size: 15pt;
@@ -348,7 +383,7 @@ h3 {
     input[type="url"],
     input[type="button"] {
         display: inline-block;
-        margin: 3% auto;
+        margin: 0;
         height: 6vh;
     }
     input[type="url"] {
@@ -366,7 +401,7 @@ h3 {
         right: 0;
         height: 5vh;
         background-color: white;
-        left: 25%;
+        left: 22%;
         color: black;
     }
     .modal a {
@@ -425,7 +460,7 @@ h3 {
         margin: auto;
         text-align: start;
     }
-    input.getStart {
+    input[type="button"].getStart {
         margin: 5% 22%;
         width: 31%;
         font-size: large;
@@ -461,6 +496,7 @@ h3 {
 
 @media (max-width:600px) {
     .footer .footer-bottom {
+        background-color: hsl(260, 8%, 14%);
         display: grid;
         grid-template-columns: 1fr;
     }
@@ -468,7 +504,7 @@ h3 {
         justify-items: center;
     }
     .footer .footer-bottom strong {
-        font-size: 1.3rem;
+        font-size: 1.1rem;
     }
     .footer .footer-bottom .one>strong {
         font-size: 2.3rem;
