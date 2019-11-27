@@ -228,7 +228,7 @@ input[type="button"] {
     position: absolute;
     top: 59%;
     width: 100vw;
-    left: 0;
+    left: -7px;
     height: 1.5vh;
     z-index: 1;
     background-color: hsl(180, 66%, 49%);
@@ -398,7 +398,7 @@ footer svg path {
         width: 80%;
         height: 6vh;
         line-height: 6vh;
-        margin: -10px 5%;
+        margin: -1px 5%;
     }
     hr {
         display: none;
@@ -527,7 +527,10 @@ footer svg path {
         } 
         .brands {           
             height: 40vh;           
-        }     
+        }   
+        .logSign li:nth-child(2) {           
+            margin: -9px 5%;
+        }  
 
 }
 
