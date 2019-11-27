@@ -23,6 +23,9 @@ input#userInp:invalid{
     border: 3px solid hsl(0, 87%, 67%);
     box-shadow: 1px 1px 0px 3px rgb(141, 98, 107);
 }
+input#userInp:focus {
+    height: 8vh;
+}
 label {
     position: absolute;
     font-size: 11px;
@@ -262,7 +265,7 @@ input[type="url"],
 input[type="button"] {
     width: 90%;
     display: block;
-    margin: 3% auto 0;
+    margin: 3% auto 1%;
     height: 6vh;
 }
 
@@ -271,6 +274,7 @@ input[type="button"] {
     font-size: large;
     font-weight: 700;
     color: white;
+    margin-top: 7%;
 }
 
 form.shortUrl {
