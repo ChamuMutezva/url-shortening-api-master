@@ -47,6 +47,17 @@ label {
     border-top: 1px solid black;
 }
 
+.decoration {
+    position: absolute;
+    top: 59%;
+    width: 50%;
+    left: 25%;
+    height: 2vh;
+    z-index: 1;
+    background-color: hsl(180, 66%, 49%);
+    transform: rotate(90deg);
+}
+
 .copy-btn {   
     font-size: 15pt;
     width: 90%;
@@ -313,6 +324,7 @@ form.shortUrl {
     height: 40vh;
     display: block;
     text-align: center;
+    z-index: 10;
 }
 
 .customize.brands {   
@@ -334,9 +346,9 @@ section.brandsSection p {
 .brandsImg {
     position: relative;
     top: -15%;
-    width: 25%;
-    height: 35%;
-    line-height: 20vh;
+    width: 80px;
+    height: 80px;
+    line-height: 16vh;
     margin: auto;
     background-color: hsl(260, 8%, 14%);
     border-radius: 50%;
@@ -354,6 +366,12 @@ h3 {
 /* ############################%%%%%%%%%%%%%%%%%%%%%%%%&&&&&&&&&&&&&&&&&&& */
 
 @media only screen and (min-width: 680px) {
+    .decoration {        
+        top: 59%;       
+        left: 25%;       
+        z-index: 1;       
+        transform: rotate(0deg);
+    }
     .copy-btn {       
         width: 20%;
         height: 5vh;  
@@ -448,16 +466,14 @@ h3 {
         align-self: flex-end;
         margin-bottom: 5%;
     }
-    .brandsImg {
-        width: 20%;
-        height: 24%;
+    .brandsImg {      
         line-height: 14vh;
         right: 40%;
     }
     .brands {
         width: 30%;
         height: 40vh;
-        margin: 5% auto 8%;
+        margin: 5% auto 8%;      
     }
     .stats {
         margin-bottom: 0;
