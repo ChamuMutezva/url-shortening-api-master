@@ -47,12 +47,23 @@ label {
     border-top: 1px solid black;
 }
 
+.brands {
+    position: relative;
+    background-color: white;
+    margin: 5% auto 20%;
+    width: 90%;
+    height: 50vh;
+    display: block;
+    text-align: center;
+    z-index: 10;
+}
+
 .decoration {
     position: absolute;
     top: 59%;
-    width: 50%;
-    left: 25%;
-    height: 2vh;
+    width: 100vw;
+    left: 0;
+    height: 1.5vh;
     z-index: 1;
     background-color: hsl(180, 66%, 49%);
     transform: rotate(90deg);
@@ -317,15 +328,6 @@ form.shortUrl {
     text-align: center;
 }
 
-.brands {
-    background-color: white;
-    margin: 5% auto 15%;
-    width: 90%;
-    height: 40vh;
-    display: block;
-    text-align: center;
-    z-index: 10;
-}
 
 .customize.brands {   
     margin-bottom: 0;
@@ -338,6 +340,7 @@ section.brandsSection {
 
 section.brandsSection p {
     font-size: small;
+    font-weight: 900;
     width: 90%;
     margin: auto;
     text-align: center;
@@ -366,10 +369,10 @@ h3 {
 /* ############################%%%%%%%%%%%%%%%%%%%%%%%%&&&&&&&&&&&&&&&&&&& */
 
 @media only screen and (min-width: 680px) {
-    .decoration {        
-        top: 59%;       
-        left: 25%;       
-        z-index: 1;       
+    .decoration { 
+        width: 65vw;       
+        top: 64%;       
+        left: 25%;                
         transform: rotate(0deg);
     }
     .copy-btn {       
@@ -466,13 +469,15 @@ h3 {
         align-self: flex-end;
         margin-bottom: 5%;
     }
-    .brandsImg {      
-        line-height: 14vh;
+    .brandsImg {   
+        width: 65px;
+        height: 65px; 
+        line-height: 18vh;
         right: 40%;
     }
     .brands {
         width: 30%;
-        height: 40vh;
+        height: 46vh;
         margin: 5% auto 8%;      
     }
     .stats {
@@ -520,8 +525,17 @@ h3 {
         margin-top: 0;
     }
     section.brandsSection p {
-        font-size: medium;
+        font-size: large;
            }
+
+           .brandsImg {           
+            top: -7%; 
+            line-height: 10vh;          
+        } 
+        .brands {           
+            height: 40vh;           
+        }     
+
 }
 
 @media (max-width:600px) {
