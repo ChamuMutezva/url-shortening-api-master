@@ -8,6 +8,148 @@ body {
     font-family: 'Poppins', sans-serif;
     overflow-x: hidden;
 }
+
+
+h3 {
+    margin-bottom: 3%;
+}
+
+p {
+    text-align: center;
+    opacity: 0.5;
+}
+/* header section, modal and nav ################### */
+nav {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 5%;
+}
+
+nav img {
+    margin-left: 7%;
+}
+
+
+nav svg {
+    margin-left: 6%;
+}
+
+.fa.fa-bars {
+    visibility: visible;
+    margin-right: 5%;
+    font-size: large;
+}
+
+section.modal {
+    text-align: center;
+    position: absolute;
+    top: 12%;
+    visibility: hidden;
+    background-color: hsl(258, 35%, 47%);
+    border-radius: 25px;
+    left: 12%;
+    height: 55vh;
+    width: 80%;
+    color: white;
+}
+
+.modal a {
+    color: white;
+    text-decoration: none;
+}
+
+ul.products {
+    height: 60%;
+}
+
+ul.logSign {
+    height: 40%;
+}
+
+.logSign li:nth-child(2) {
+    width: 50%;
+    height: 7vh;
+    line-height: 7vh;
+    background-color: hsl(180, 66%, 49%);
+    margin: auto;
+    border-radius: 25px;
+}
+
+hr {
+    width: 80%;
+    margin: 2% auto 5%;
+}
+
+ul {
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+
+li {
+    list-style: none;
+}
+/* End of Header, nav and modal section */
+
+/* Main secction &&&&&&&&&&&&&&&&&&& */
+section.hero {
+    display: flex;
+    flex-direction: row-reverse;
+    flex-wrap: wrap;
+    margin: 14% auto 30%;
+}
+
+img.illustrate {
+    width: 100%;
+    margin: auto;
+}
+
+.shorterLinks h1 {
+    font-weight: 900;
+    text-align: center;
+    font-size: xx-large;
+    width: 90%;
+    margin-top: 5%;
+}
+
+input[type="button"].getStart {
+    margin: 5% auto;
+    width: 50%;
+    height: 8vh;
+    border-radius: 20px;    
+}
+
+section.brandsSection {
+    background-color: lightgray;
+    position: relative;
+}
+
+section.brandsSection p {
+    font-size: small;
+    font-weight: 900;
+    width: 90%;
+    margin: auto;
+    text-align: center;
+}
+ /* form */
+ form.shortUrl {
+    position: absolute;
+    top: -8%;
+    left: 5%;
+    width: 90%;  
+    margin: auto;
+    height: 23vh;
+    padding: 1% 0 0 0;
+    border-radius: 25px;
+
+    background-image: url('images/bg-boost-mobile.svg');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    background-color: rgb(70, 24, 112);
+}
+
 .urlDiv {
     display: flex;
     flex-direction: row;
@@ -15,17 +157,21 @@ body {
     background: white;
     padding-bottom: 5%;
 }
+
 input#userInp {
     font-size: 8pt;
     padding-left: 5%;
 }
+
 input#userInp:invalid{
     border: 3px solid hsl(0, 87%, 67%);
     box-shadow: 1px 1px 0px 3px rgb(141, 98, 107);
 }
+
 input#userInp:focus {
     height: 8vh;
 }
+
 label {
     position: absolute;
     font-size: 11px;
@@ -45,6 +191,26 @@ label {
 .url-short {
     color: hsl(180, 66%, 49%);
     border-top: 1px solid black;
+}
+
+input[type="url"],
+input[type="button"] {
+    width: 90%;
+    display: block;
+    margin: 3% auto 1%;
+    height: 6vh;
+}
+
+input[type="button"] {
+    background-color: hsl(180, 66%, 49%);
+    font-size: large;
+    font-weight: 700;
+    color: white;
+    margin-top: 7%;
+}
+
+.urlContainer {
+    padding: 20% 1% 10%;
 }
 
 .brands {
@@ -69,6 +235,30 @@ label {
     transform: rotate(90deg);
 }
 
+.heroSecondary {
+    background-color: hsl(0, 0%, 75%);
+}
+
+.stats {
+    margin-bottom: 15%;
+    text-align: center;
+}
+
+.customize.brands {   
+    margin-bottom: 0;
+}
+
+.brandsImg {
+    position: relative;
+    top: -15%;
+    width: 80px;
+    height: 80px;
+    line-height: 16vh;
+    margin: auto;
+    background-color: hsl(260, 8%, 14%);
+    border-radius: 50%;
+}
+
 .copy-btn {   
     font-size: 15pt;
     width: 90%;
@@ -79,7 +269,7 @@ label {
     color: #fff;
     border: none;
 }
-
+ /* &&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&& FOOTER  ************* */
 .footer {   
     color: white;
     padding: 0 0 10%;
@@ -114,7 +304,6 @@ footer h2 {
     background: white;
     color: turquoise;
 }
-
 
 /* section bottom of footer */
 
@@ -170,202 +359,6 @@ footer svg path {
     cursor: pointer;
     transform: translateY(3px);
 }
-
-
-/* @media only screen and (min-width: 300px) {  unnecessary media query removed*/
-
-nav {
-    display: flex;
-    justify-content: space-between;
-    margin-top: 5%;
-}
-
-nav img {
-    margin-left: 7%;
-}
-
-ul.products {
-    height: 60%;
-}
-
-ul.logSign {
-    height: 40%;
-}
-
-hr {
-    width: 80%;
-    margin: 2% auto 5%;
-}
-
-ul {
-    text-align: center;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-around;
-}
-
-li {
-    list-style: none;
-}
-
-
-/* svg*/
-
-nav svg {
-    margin-left: 6%;
-}
-
-section.modal {
-    text-align: center;
-    position: absolute;
-    top: 12%;
-    visibility: hidden;
-    background-color: hsl(258, 35%, 47%);
-    border-radius: 25px;
-    left: 12%;
-    height: 55vh;
-    width: 80%;
-    color: white;
-}
-
-.modal a {
-    color: white;
-    text-decoration: none;
-}
-
-.logSign li:nth-child(2) {
-    width: 50%;
-    height: 7vh;
-    line-height: 7vh;
-    background-color: hsl(180, 66%, 49%);
-    margin: auto;
-    border-radius: 25px;
-}
-
-img.illustrate {
-    width: 100%;
-    margin: auto;
-}
-
-.fa.fa-bars {
-    visibility: visible;
-    margin-right: 5%;
-    font-size: large;
-}
-
-section.hero {
-    display: flex;
-    flex-direction: row-reverse;
-    flex-wrap: wrap;
-    margin: 14% auto 30%;
-}
-
-.shorterLinks h1 {
-    font-weight: 900;
-    text-align: center;
-    font-size: xx-large;
-    width: 90%;
-    margin-top: 5%;
-}
-
-p {
-    text-align: center;
-    opacity: 0.5;
-}
-
-input[type="button"].getStart {
-    margin: 5% auto;
-    width: 50%;
-    height: 8vh;
-    border-radius: 20px;    
-}
-
-
-/* ***************Main Section ****************** */
-
-input[type="url"],
-input[type="button"] {
-    width: 90%;
-    display: block;
-    margin: 3% auto 1%;
-    height: 6vh;
-}
-
-input[type="button"] {
-    background-color: hsl(180, 66%, 49%);
-    font-size: large;
-    font-weight: 700;
-    color: white;
-    margin-top: 7%;
-}
-
-form.shortUrl {
-    position: absolute;
-    top: -8%;
-    left: 5%;
-    width: 90%;
-   /* background-image: url(images/bg-shorten-mobile.svg);
-    background-size: 100% 420%;
-    background-repeat: no-repeat; */
-    margin: auto;
-    height: 23vh;
-    padding: 1% 0 0 0;
-    border-radius: 25px;
-
-    background-image: url('images/bg-boost-mobile.svg');
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: cover;
-    background-color: rgb(70, 24, 112);
-}
-
-.heroSecondary {
-    background-color: hsl(0, 0%, 75%);
-}
-
-.stats {
-    margin-bottom: 15%;
-    text-align: center;
-}
-
-
-.customize.brands {   
-    margin-bottom: 0;
-}
-
-section.brandsSection {
-    background-color: lightgray;
-    position: relative;
-}
-
-section.brandsSection p {
-    font-size: small;
-    font-weight: 900;
-    width: 90%;
-    margin: auto;
-    text-align: center;
-}
-
-.brandsImg {
-    position: relative;
-    top: -15%;
-    width: 80px;
-    height: 80px;
-    line-height: 16vh;
-    margin: auto;
-    background-color: hsl(260, 8%, 14%);
-    border-radius: 50%;
-}
-
-h3 {
-    margin-bottom: 3%;
-}
-
-.urlContainer {
-    padding: 20% 1% 10%;
-}
-
-
 /* ############################%%%%%%%%%%%%%%%%%%%%%%%%&&&&&&&&&&&&&&&&&&& */
 
 @media only screen and (min-width: 680px) {
