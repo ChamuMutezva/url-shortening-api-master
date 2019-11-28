@@ -1,0 +1,24 @@
+{
+    "name": "Url Shortener",
+    "short_name": "Url Shortener",
+    "display": "standalone",
+    "start_url": "/index.html",
+    "theme_color": "#8b899a",
+    "background_color": "#8b899a",
+    "orientation": "portrait-primary",
+    
+    "icons": [
+        {
+            "src": "mani/android-chrome-192x192.png",
+            "sizes": "192x192",
+            "type": "image/png"
+        },
+        {
+            "src": "mani/android-chrome-512x512.png",
+            "sizes": "512x512",
+            "type": "image/png"
+        }
+    ]
+   
+   
+}
