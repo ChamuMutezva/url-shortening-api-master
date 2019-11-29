@@ -45,7 +45,7 @@ section.modal {
     position: absolute;
     top: 12%;
     visibility: hidden;
-    background-color: hsl(258, 35%, 47%);
+    background-color: hsl(257, 27%, 26%);
     border-radius: 25px;
     left: 12%;
     height: 55vh;
@@ -56,6 +56,7 @@ section.modal {
 .modal a {
     color: white;
     text-decoration: none;
+    font-weight: 900;
 }
 
 ul.products {
@@ -227,8 +228,8 @@ input[type="button"] {
 .decoration {
     position: absolute;
     top: 59%;
-    width: 100vw;
-    left: -7px;
+    width: 140vw;
+    left: -78px;
     height: 1.5vh;
     z-index: 1;
     background-color: hsl(180, 66%, 49%);
@@ -311,10 +312,10 @@ footer h2 {
     display: grid;
     grid-template-columns: 3fr 1fr 1fr 1fr 2fr;
     gap: 10px;
+    margin-top: 4%;
 }
 
-.footer .footer-bottom>* {
-    /*padding: 10px; */
+.footer .footer-bottom>* {    
     display: grid;
     grid-template-columns: 1fr;
     justify-content: center;

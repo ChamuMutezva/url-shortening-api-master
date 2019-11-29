@@ -1,16 +1,23 @@
 # Frontend Mentor - Shortly URL shortening API Challenge
 Live Preview Link: https://chamumutezva.github.io/url-shortening-api-master/
-![Design preview for the Shortly URL shortening API coding challenge](./design/desktop-preview.jpg)
 
 ## Welcome! 👋
+This is a challenge that was presented by Frontend Mentor.
+The designs are found in the design folder and the images 
+used for the project are found in the images folder.
 
-Thanks for checking out this front-end coding challenge.
+More challenges can be found on the Frontend Mentor website on the following url
+[Frontend Mentor](https://www.frontendmentor.io) 
+This challenge gave me an opportunity to improve my skills in a real-life workflow.
 
-[Frontend Mentor](https://www.frontendmentor.io) challenges allow you to improve your skills in a real-life workflow.
+The application is a Progressive Web app that can be viewed offline and installed on mobile 
+as well as desktop.
 
-**To do this challenge, you need a basic understanding of HTML, CSS and JavaScript.**
+It was a collobarative effort with Swaraj.
 
-## The challenge
+**This challenge, was created using HTML, CSS and JavaScript.**
+
+## The challenge instructions and extras
 
 Your challenge is to build out this landing page, integrate with the [rel.ink](https://rel.ink) API and get it looking as close to the design as possible.
 
