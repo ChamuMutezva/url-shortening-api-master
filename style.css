@@ -40,7 +40,7 @@ nav svg {
     font-size: large;
 }
 
-section.modal {
+div.modal {
     text-align: center;
     position: absolute;
     top: 12%;
@@ -419,7 +419,7 @@ footer svg path {
     input[type="button"] {
         width: 30%;
     }
-    section.modal {
+    div.modal {
         width: 80%;
         visibility: visible;
         display: flex;
@@ -427,7 +427,7 @@ footer svg path {
         top: 9%;
         right: 0;
         height: 5vh;
-        background-color: white;
+        background-color: inherit;
         left: 22%;
         color: black;
     }
