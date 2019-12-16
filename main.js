@@ -44,7 +44,7 @@ function addDetails() {
             headers: {
                 'Content-Type': 'application/json',
             }
-        }).then(response => {
+        }).then(response => { 
           //  container.innerHTML = '';
             if (response.status == 400) {
                 //alert("Please make sure you provided a valid url");
