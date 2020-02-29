@@ -59,15 +59,19 @@ div.modal {
     font-weight: 900;
 }
 
-ul.products {
+ul.modal__products {
     height: 60%;
+    border-bottom: 1px solid white;
+    width: 80%;
+    margin: auto;
 }
 
-ul.logSign {
-    height: 40%;
+ul.modal__logSign {
+    height: 35%;
+    margin: 5% auto;
 }
 
-.logSign li:nth-child(2) {
+.modal__logSign li:nth-child(2) {
     width: 50%;
     height: 7vh;
     line-height: 7vh;
@@ -101,12 +105,12 @@ section.hero {
     margin: 14% auto 30%;
 }
 
-img.illustrate {
+img.hero__img {
     width: 100%;
     margin: auto;
 }
 
-.shorterLinks h1 {
+.hero__linksInfo h1 {
     font-weight: 900;
     text-align: center;
     font-size: xx-large;
@@ -363,6 +367,9 @@ footer svg path {
 /* ############################%%%%%%%%%%%%%%%%%%%%%%%%&&&&&&&&&&&&&&&&&&& */
 
 @media only screen and (min-width: 680px) {
+    ul.modal__logSign {        
+        margin: auto;
+    }
     .decoration { 
         width: 65vw;       
         top: 64%;       
@@ -395,10 +402,10 @@ footer svg path {
     nav img {
         margin-left: 5%;
     }
-    .logSign li:nth-child(2) {
+    .modal__logSign li:nth-child(2) {
         width: 80%;
-        height: 6vh;
-        line-height: 6vh;
+        height: 5vh;
+        line-height: 5vh;
         margin: -1px 5%;
     }
     hr {
@@ -420,7 +427,7 @@ footer svg path {
         width: 30%;
     }
     div.modal {
-        width: 80%;
+        width: 75%;
         visibility: visible;
         display: flex;
         justify-content: space-around;
@@ -444,10 +451,10 @@ footer svg path {
     .fa.fa-bars {
         visibility: hidden;
     }
-    .shorterLinks {
+    .hero__linksInfo {
         width: 50%;
     }
-    img.illustrate {
+    img.hero__img {
         width: 50%;
     }
     nav svg {
@@ -477,13 +484,13 @@ footer svg path {
     .stats {
         margin-bottom: 0;
     }
-    .shorterLinks h1 {
+    .hero__linksInfo h1 {
         font-size: xx-large;
         width: 55%;
         margin: 5% auto 0;
         text-align: start;
     }
-    .shorterLinks p {
+    .hero__linksInfo p {
         width: 55%;
         margin: auto;
         text-align: start;
@@ -511,44 +518,6 @@ footer svg path {
     section.brandsSection p {
         font-size: small;
         width: 80%;
-    }
-}
-
-@media only screen and (min-width: 980px) {
-    nav svg {
-        margin-top: 0;
-    }
-    section.brandsSection p {
-        font-size: large;
-           }
-
-           .brandsImg {           
-            top: -7%; 
-            line-height: 10vh;          
-        } 
-        .brands {           
-            height: 40vh;           
-        }   
-        .logSign li:nth-child(2) {           
-            margin: -9px 5%;
-        }  
-
-}
-
-@media (max-width:600px) {
-    .footer .footer-bottom {
-        background-color: hsl(260, 8%, 14%);
-        display: grid;
-        grid-template-columns: 1fr;
-    }
-    .footer .footer-bottom>div {
-        justify-items: center;
-    }
-    .footer .footer-bottom strong {
-        font-size: 1.1rem;
-    }
-    .footer .footer-bottom .one>strong {
-        font-size: 2.3rem;
     }
 }
 
@@ -627,4 +596,47 @@ footer svg path {
     100% {
         transform: translate(24px, 0);
     }
+}
+
+@media (max-width:600px) {
+    .footer .footer-bottom {
+        background-color: hsl(260, 8%, 14%);
+        display: grid;
+        grid-template-columns: 1fr;
+    }
+    .footer .footer-bottom>div {
+        justify-items: center;
+    }
+    .footer .footer-bottom strong {
+        font-size: 1.1rem;
+    }
+    .footer .footer-bottom .one>strong {
+        font-size: 2.3rem;
+    }
+}
+
+
+
+@media only screen and (min-width: 980px) {
+   
+    nav svg {
+        margin-top: 0;
+    }
+    section.brandsSection p {
+        font-size: large;
+           }
+
+           .brandsImg {           
+            top: -7%; 
+            line-height: 10vh;          
+        } 
+        .brands {           
+            height: 40vh;           
+        }   
+        .modal__logSign li:nth-child(2) {           
+            margin: -9px 5%;
+            height: 4vh;
+            line-height: 4vh;
+        }  
+
 }
